@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_nashc.mk
+    $(LOCAL_DIR)/xdroid_nashc.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_nashc-user \
-    arrow_nashc-userdebug \
-    arrow_nashc-eng
+    xdroid_nashc-user \
+    xdroid_nashc-userdebug \
+    xdroid_nashc-eng

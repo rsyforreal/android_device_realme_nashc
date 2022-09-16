@@ -21,14 +21,23 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/realme/nashc/device.mk)
 
-# Inherit some common ArrowOS stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
+# Inherit some common xdroidOSS stuff
+$(call inherit-product, vendor/xdroid/config/common.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
+XDROID_BOOT_DARK := true
+XDROID_BOOT := 1080
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
+TARGET_INCLUDE_STOCK_ARCORE := false
+XDROID_MAINTAINER := rsyforreal
 
-PRODUCT_NAME := arrow_nashc
+# Device identifier
+PRODUCT_NAME := xdroid_nashc
 PRODUCT_DEVICE := nashc
 PRODUCT_MANUFACTURER := realme
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := RMX3085
+DEVICE_MAINTAINER := rsyforreal
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
